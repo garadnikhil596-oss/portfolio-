@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Garad | Computer science Student Portfolio</title>
+    <meta name="description"
+        content="Nikhil Garad - Computer science Student a. Aspiring Full-Stack Developer.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    
+</style>
+
+<body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-logo">NIKHIL GARAD</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#certifications" class="nav-link">Certifications</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Game Elements: XP Bar -->
+    <div class="xp-bar-container">
+        <div class="xp-bar-fill"></div>
+        <div class="xp-text">LVL <span id="currentLevel">1</span></div>
+    </div>
+
+    <!-- Game Elements: Level Up Toast -->
+    <div id="levelUpToast" class="level-toast">
+        <div class="level-icon">🆙</div>
+        <div class="level-info">
+            <h3>LEVEL UP!</h3>
+            <p id="levelMessage">Welcome to the Portfolio!</p>
+        </div>
+    </div>
+
+    <!-- Home Section with Animated Background -->
+    <section id="home" class="home-section">
+        <!-- Animated Particles Background -->
+        <div class="particles-bg">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="scroll-text-container">
+            <div class="scroll-text">
+                <span class="scroll-text-item">CREATIVE DEVELOPER</span>
+                <span class="scroll-text-item">PROBLEM SOLVER</span>
+                <span class="scroll-text-item">TECH ENTHUSIAST</span>
+                <span class="scroll-text-item">FULL-STACK ASPIRANT</span>
+                <span class="scroll-text-item">CREATIVE DEVELOPER</span>
+                <span class="scroll-text-item">PROBLEM SOLVER</span>
+            </div>
+        </div>
+
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">NIKHIL</span>
+                <span class="title-line">GARAD</span>
+            </h1>
+            <p class="hero-subtitle">Computer science Student | Aspiring Full-Stack Developer | Problem Solver</p>
+            <div class="hero-cta">
+                <button class="cta-button primary"
+                    onclick="document.querySelector('#projects').scrollIntoView({behavior: 'smooth'})">Explore
+                    Work</button>
+                <button class="cta-button secondary"
+                    onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'})">Get in
+                    Touch</button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>SCROLL</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="about-container">
+            <div class="about-photo-card glass-card">
+                <img src="Photo nikhil.jpeg" alt="Nikhil Garad" class="about-photo">
+                <h3>Nikhil Dnyaneshwar Garad</h3>
+                <p class="about-role">Computer science Student @ ACA, Ahilyanagar</p>
+            </div>
+            <div class="about-content-grid">
+                <div class="bento-card glass-card">
+                    <div class="card-icon">👩‍💻</div>
+                    <h3>Who Am I</h3>
+                    <p>A curious and passionate Computer science student who loves problem-solving and discovering
+                        how technology can make a difference in people's lives.</p>
+                </div>
+
+                <div class="bento-card glass-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Education</h3>
+                    <div class="stat-number" data-no-animate="true">2nd</div>
+                    <p>Year Computer science Student</p>
+                </div>
+
+                <div class="bento-card glass-card"
+                    onclick="document.querySelector('#certifications').scrollIntoView({behavior: 'smooth'})"
+                    style="cursor: pointer;">
+                    <div class="card-icon">🏆</div>
+                    <h3>Certifications</h3>
+                    <div class="stat-number">11+</div>
+                    <p>Professional Certificates</p>
+                </div>
+
+                <div class="bento-card glass-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Practice</h3>
+                    <div class="stat-number">Daily</div>
+                    
+                </div>
+
+                <div class="bento-card card-wide glass-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Aspiration & Philosophy</h3>
+                    <p>I aspire to become a full-stack developer and work on meaningful real-world projects. I'm
+                        actively seeking internship opportunities. In my free time, I love traveling in nature — it
+                        refreshes my mind and inspires creativity. <em>"Keep learning. Keep building. The journey
+                            matters as much as the destination."</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Circular Progress Bars -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">SKILLS & EXPERTISE</h2>
+        <div class="skills-container">
+            <!-- Programming Languages -->
+            <div class="skill-category-circular">
+                <h3 class="category-title">💻 Programming Languages</h3>
+                <div class="circular-skills-grid">
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="75">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="75"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"
+                                    class="skill-icon-circular">
+                                <span class="progress-percent">75%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">C</p>
+                    </div>
+
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="85">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="85"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    alt="Python" class="skill-icon-circular">
+                                <span class="progress-percent">85%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">Python</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-category-circular">
+                <h3 class="category-title">🌐 Web Development</h3>
+                <div class="circular-skills-grid">
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="90">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="90"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5" class="skill-icon-circular">
+                                <span class="progress-percent">90%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">HTML5</p>
+                    </div>
+
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="85">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="85"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS3" class="skill-icon-circular">
+                                <span class="progress-percent">85%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">CSS3</p>
+                    </div>
+
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="75">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="75"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript" class="skill-icon-circular">
+                                <span class="progress-percent">75%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database & Tools -->
+            <div class="skill-category-circular">
+                <h3 class="category-title">🗄️ Database & Tools</h3>
+                <div class="circular-skills-grid">
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="80">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="80"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL" class="skill-icon-circular">
+                                <span class="progress-percent">80%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">MySQL</p>
+                    </div>
+
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="75">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="75"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                    alt="MongoDB" class="skill-icon-circular">
+                                <span class="progress-percent">75%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">MongoDB</p>
+                    </div>
+
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="85">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="85"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    alt="Git" class="skill-icon-circular">
+                                <span class="progress-percent">85%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">Git</p>
+                    </div>
+
+                    <div class="circular-skill-item">
+                        <div class="circular-progress" data-progress="90">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-circle-bg" cx="70" cy="70" r="60"></circle>
+                                <circle class="progress-ring-circle" cx="70" cy="70" r="60" data-progress="90"></circle>
+                            </svg>
+                            <div class="progress-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                    alt="VS Code" class="skill-icon-circular">
+                                <span class="progress-percent">90%</span>
+                            </div>
+                        </div>
+                        <p class="skill-name-circular">VS Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+     <section id="projects" class="projects-section">
+        <h2 class="section-title"> PROJECTS</h2>
+        <div class="projects-container">
+            <!-- EduTrack -->
+            <div class="project-card" data-index="3">
+                <div class="project-image" onclick="window.open('https://github.com/garadnikhil596-oss/Smart-parking-management-system-/', '_blank')"
+                    style="cursor: pointer;">
+                    <img src="Dashbord.jpeg" alt="EduTrack - Attendance Management System">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <h4>Visit Site ↗</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">EduTrack</h3>
+                    <p class="project-description">A Smart Parking Management System designed for efficient vehicle parking in urban areas, colleges, and commercial spaces. It includes features like real-time parking slot availability, automated entry and exit tracking, vehicle management, reservation system, detailed analytics, and role-based access control for administrators and users.</p>
+                    <div class="project-tags">
+                        <span class="tag">Web Development</span>
+                        <span class="tag">Management System</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+
+                    <div class="project-links">
+                        <button class="project-btn"
+                            onclick="window.open('https://github.com/garadnikhil596-oss/Smart-parking-management-system-/', '_blank')">🌐 Visit
+                            Site</button>
+                    </div>
+                </div>
+            </div>
+     <!-- Drone Video Modal -->
+        <div id="droneVideo" class="video-modal"
+            onclick="this.style.display='none'; this.querySelector('video').pause()">
+            <div class="video-container" onclick="event.stopPropagation()">
+                <button class="close-video"
+                    onclick="document.getElementById('droneVideo').style.display='none'; document.getElementById('droneVideo').querySelector('video').pause()">✕</button>
+                <video controls width="100%">
+                    <source src="drone.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+        <div class="cert-grid">
+            <div class="cert-card glass-card" onclick="window.open('HTML_Certificate.pdf', '_blank')"
+                style="cursor: pointer;">
+                <div class="cert-icon"><img
+                        src="https://storage.needpix.com/rsynced_images/logo-2582748_1280.png" alt="HTML"
+                        class="cert-logo"></div>
+                         
+                <h3 class="cert-title">HTML</h3>
+                <p class="cert-issuer">A2Z IT HUB</p>
+                <p class="cert-year">2025</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('HTML_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card" onclick="window.open('CSS_Certificate.pdf', '_blank')"
+                style="cursor: pointer;">
+                <div class="cert-icon"><img
+                        src="download.png" alt="CSS"
+                        class="cert-logo"></div>
+                <h3 class="cert-title">CSS</h3>
+                <p class="cert-issuer">A2Z IT HUB</p>
+                <p class="cert-year">2025</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('CSS_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card" onclick="window.open('JAVASCRIPT_Certificate.pdf', '_blank')" style="cursor: pointer;">
+                <div class="cert-icon"><img
+                        src="https://e7.pngegg.com/pngimages/640/199/png-clipart-javascript-logo-html-javascript-logo-angle-text-thumbnail.png" alt="Python"
+                        class="cert-logo"></div>
+                <h3 class="cert-title">JavaScript</h3>
+                <p class="cert-issuer">A2Z IT HUB</p>
+                <p class="cert-year">2026</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('JAVASCRIPT_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card" onclick="window.open('BOOTSTRAP_Certificate.pdf', '_blank')" style="cursor: pointer;">
+                <div class="cert-icon"><img
+                        src="https://w7.pngwing.com/pngs/628/224/png-transparent-bootstrap-plain-wordmark-logo-icon-thumbnail.png" alt="Python"
+                        class="cert-logo"></div>
+                <h3 class="cert-title">BOOTSTRAP</h3>
+                <p class="cert-issuer">A2Z IT HUB</p>
+                <p class="cert-year">2026</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('BOOTSTRAP_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card" onclick="window.open('JQUERY_Certificate.pdf', '_blank')"
+                style="cursor: pointer;">
+               <div class="cert-icon"><img
+                        src="https://p7.hiclipart.com/preview/265/442/487/jquery-ui-javascript-web-browser-pasargad.jpg" alt="Python"
+                        class="cert-logo"></div>
+                <h3 class="cert-title">JQUERY</h3>
+                <p class="cert-issuer">A2Z IT HUB</p>
+                <p class="cert-year">2026</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('JQUERY_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card" onclick="window.open('TATA_Certificate.pdf', '_blank')"
+                style="cursor: pointer;">
+                <div class="cert-icon">🏆</div>
+                <h3 class="cert-title">Cybersecurity Analyst Job Simulation</h3>
+                <p class="cert-issuer">TATA</p>
+                <p class="cert-year">2025</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('TATA_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card"
+                onclick="window.open('HP_Certificate.pdf', '_blank')"
+                style="cursor: pointer;">
+                <div class="cert-icon">🤖</div>
+                <h3 class="cert-title">Cybersecurity Awareness</h3>
+                <p class="cert-issuer">HP Foundation</p>
+                <p class="cert-year">2025</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('HP_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card" onclick="window.open('JP_Morgan_Certificate.pdf', '_blank')"
+                style="cursor: pointer;">
+                <div class="cert-icon">📚</div>
+                <h3 class="cert-title">Quantitative Research</h3>
+                <p class="cert-issuer">JP_Morgan</p>
+                <p class="cert-year">2025</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('JP_Morgan_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+            <div class="cert-card glass-card" onclick="window.open('Deloitte_completion_Certificate.pdf', '_blank')"
+                style="cursor: pointer;">
+                <div class="cert-icon">🌐</div>
+                <h3 class="cert-title">Data Analytics</h3>
+                <p class="cert-issuer">Deloitte_completion</p>
+                <p class="cert-year">2025</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('Deloitte_completion_Certificate.pdf', '_blank')">View
+                    Certificate</button>
+            </div>
+      <div class="cert-card glass-card" onclick="window.open('HSC.pdf', '_blank')"
+                style="cursor: pointer;">
+    <div class="cert-icon">📜</div>
+    <h3 class="cert-title">HSC (12th)</h3>
+    <p class="cert-issuer">Maharashtra Board</p>
+    <p class="cert-year">Completed</p>
+   <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('HSC.pdf', '_blank')">View
+                    Certificate</button>
+</div>
+            <div class="cert-card glass-card" onclick="window.open('SSC.pdf', '_blank')"
+                style="cursor: pointer;">
+                <div class="cert-icon">📜</div>
+                <h3 class="cert-title">SSC (10th)</h3>
+                <p class="cert-issuer">Maharashtra Board</p>
+                <p class="cert-year">Completed</p>
+                <button class="cert-view-btn"
+                    onclick="event.stopPropagation(); window.open('SSC.pdf', '_blank')">View
+                    Marksheet</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Social Links -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">LET'S CONNECT</h2>
+        <div class="contact-container">
+            <p class="contact-intro">Feel free to reach out to me through any of these platforms!</p>
+
+            <div class="social-grid">
+                <a href="mailto:isaaz200623@gmail.com" class="social-card glass-card">
+                    <div class="social-icon-wrapper">
+                        <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>garadnikhil@gmail.com</p>
+                </a>
+
+                <a href="https://github.com/garadnikhil596-oss" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card">
+                    <div class="social-icon-wrapper">
+                        <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>@Nikhil Garad</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/nikhil-garad-74902a306/" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card">
+                    <div class="social-icon-wrapper">
+                        <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Nikhil Garad</p>
+                </a>
+
+              <!--  <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer"
+                    class="social-card glass-card">
+                    <div class="social-icon-wrapper">
+                        <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                        </svg>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <p>@Nikhil Garad</p> -->
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Nikhil Garad. Crafted with precision and passion.</p>
+            <div class="footer-links">
+                <a href="garadnikhil@gmail.com">Email</a>
+                <a href="https://github.com/garadnikhil596-oss" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/nikhil-garad-74902a306/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Circular Scroll To Top Button -->
+    <div class="scroll-top-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <span class="scroll-top-icon">↑</span>
+    </div>
+</body>
+
+</html>
